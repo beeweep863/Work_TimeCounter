@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0BAF202C25CBD500D86E7A /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BAF1F2C25CBD500D86E7A /* CircleButton.swift */; };
+		CF0BAF222C25CD0100D86E7A /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BAF212C25CD0100D86E7A /* CircleTimer.swift */; };
 		CF5077722C252CCC009EA383 /* Work_TimeCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5077712C252CCC009EA383 /* Work_TimeCounterApp.swift */; };
 		CF5077742C252CCC009EA383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5077732C252CCC009EA383 /* ContentView.swift */; };
 		CF5077762C252CCE009EA383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5077752C252CCE009EA383 /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 		CF5077832C252CCF009EA383 /* Work_TimeCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5077822C252CCF009EA383 /* Work_TimeCounterTests.swift */; };
 		CF50778D2C252CCF009EA383 /* Work_TimeCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50778C2C252CCF009EA383 /* Work_TimeCounterUITests.swift */; };
 		CF50778F2C252CCF009EA383 /* Work_TimeCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50778E2C252CCF009EA383 /* Work_TimeCounterUITestsLaunchTests.swift */; };
+		CF50779D2C25B629009EA383 /* PomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50779C2C25B629009EA383 /* PomTimer.swift */; };
+		CF50779F2C25C31E009EA383 /* HoursCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50779E2C25C31E009EA383 /* HoursCounter.swift */; };
+		CF5077A22C25C4F3009EA383 /* TimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5077A12C25C4F3009EA383 /* TimerDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0BAF1F2C25CBD500D86E7A /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		CF0BAF212C25CD0100D86E7A /* CircleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTimer.swift; sourceTree = "<group>"; };
 		CF50776E2C252CCC009EA383 /* Work_TimeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Work_TimeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5077712C252CCC009EA383 /* Work_TimeCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_TimeCounterApp.swift; sourceTree = "<group>"; };
 		CF5077732C252CCC009EA383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,9 @@
 		CF5077882C252CCF009EA383 /* Work_TimeCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Work_TimeCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF50778C2C252CCF009EA383 /* Work_TimeCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_TimeCounterUITests.swift; sourceTree = "<group>"; };
 		CF50778E2C252CCF009EA383 /* Work_TimeCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_TimeCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF50779C2C25B629009EA383 /* PomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomTimer.swift; sourceTree = "<group>"; };
+		CF50779E2C25C31E009EA383 /* HoursCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCounter.swift; sourceTree = "<group>"; };
+		CF5077A12C25C4F3009EA383 /* TimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0BAF1E2C25CBBE00D86E7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF5077A02C25C4E5009EA383 /* Demos */,
+				CF0BAF1F2C25CBD500D86E7A /* CircleButton.swift */,
+				CF0BAF212C25CD0100D86E7A /* CircleTimer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CF5077652C252CCC009EA383 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +114,8 @@
 		CF5077702C252CCC009EA383 /* Work_TimeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				CF0BAF1E2C25CBBE00D86E7A /* Views */,
+				CF50779B2C25B616009EA383 /* Logic */,
 				CF5077712C252CCC009EA383 /* Work_TimeCounterApp.swift */,
 				CF5077732C252CCC009EA383 /* ContentView.swift */,
 				CF5077752C252CCE009EA383 /* Assets.xcassets */,
@@ -125,6 +147,23 @@
 				CF50778E2C252CCF009EA383 /* Work_TimeCounterUITestsLaunchTests.swift */,
 			);
 			path = Work_TimeCounterUITests;
+			sourceTree = "<group>";
+		};
+		CF50779B2C25B616009EA383 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CF50779C2C25B629009EA383 /* PomTimer.swift */,
+				CF50779E2C25C31E009EA383 /* HoursCounter.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		CF5077A02C25C4E5009EA383 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				CF5077A12C25C4F3009EA383 /* TimerDemo.swift */,
+			);
+			path = Demos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF50779D2C25B629009EA383 /* PomTimer.swift in Sources */,
 				CF5077742C252CCC009EA383 /* ContentView.swift in Sources */,
+				CF5077A22C25C4F3009EA383 /* TimerDemo.swift in Sources */,
+				CF0BAF202C25CBD500D86E7A /* CircleButton.swift in Sources */,
+				CF50779F2C25C31E009EA383 /* HoursCounter.swift in Sources */,
+				CF0BAF222C25CD0100D86E7A /* CircleTimer.swift in Sources */,
 				CF5077722C252CCC009EA383 /* Work_TimeCounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
