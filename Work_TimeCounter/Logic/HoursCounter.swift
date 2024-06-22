@@ -8,11 +8,21 @@
 import Foundation
 
 class HoursCounter{
+    private var amountWork: Int = 0
+    private var amountBreak: Int = 0
     
-    func addHour(){
-        
+    func addHourWorked(){
+        amountWork += 1
     }
-    func removeHour(){
-        
+    func removeHourWorked(){
+        amountWork -= 1
     }
+    
+    func addHourBreak(){
+        amountBreak += 1
+    }
+    func removeHourBreak(){
+        amountBreak -= 1
+    }
+    
 }

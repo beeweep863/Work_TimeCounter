@@ -41,10 +41,14 @@ class PomTimer {
     
     private var _timer: Timer?
     
-    
-    
     init(workInSeconds: TimeInterval, breakInSeconds: TimeInterval){
         _durationWork = workInSeconds
+        _durationBreak = breakInSeconds
+    }
+    func setWorkDuration(workInSeconds: TimeInterval){
+        _durationWork = workInSeconds
+    }
+    func setBreakDuration(breakInSeconds: TimeInterval){
         _durationBreak = breakInSeconds
     }
     
@@ -117,7 +121,6 @@ class PomTimer {
             self._mode = .work
         }
     }
-    
     
     //Mark: private methods
     private func _createTimer(){
