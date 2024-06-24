@@ -15,12 +15,12 @@ struct ContentView: View {
         TabView{
             ViewA()
                 .tabItem() {
-                    Image(systemName: "phone.fill")
-                    Text("Calls")
+                    Image(systemName: "square.stack.3d.up")
+                    Text("Hours")
                 }
             ViewB()
                 .tabItem {
-                    Image(systemName: "slider.horizontal.3")
+                    Image(systemName: "timer")
                     Text("counter")
                 }
             }
